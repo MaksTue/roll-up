@@ -214,11 +214,25 @@
   .container {
     max-width: 450px;
   }
+  .catalog-left-card {
+    margin-right: 0;
+  }
   .banner {
+    margin-top: 90px;
+  }
+  .sizes {
+    margin-top: 25px;
+  }
+  .catalog {
+    margin-top: 25px;
+  }
+  .header {
+    padding-bottom: 0;
+  }
+  .text-area-banner .banner {
     margin-top: 10px;
   }
   .banner-container {
-    margin-top: 0;
     flex-direction: column;
   }
   .banner-link {
@@ -324,6 +338,9 @@
   .text-area-banner {
     margin-left: 0;
   }
+  .text-area-banner {
+    padding: 0px 10px;
+  }
   .text-area-banner.service-text-list {
     max-width: 100%;
     align-items: center;
@@ -410,6 +427,9 @@
   .count-mobile a {
     display: flex;
   }
+  .count-mobile.mobile {
+    margin-right: 10px;
+  }
 }
 @media (max-width: 450px) {
   .container {
@@ -429,5 +449,8 @@
   }
   .catalog-right-card {
     margin: 0;
+  }
+  .img-left-card {
+    padding: 30px;
   }
 }
