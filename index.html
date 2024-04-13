@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <!-- Site CSS -->
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -16,9 +15,9 @@
     <header class="header">
       <div class="fluid-header">
         <div class="left-header">
-          <div class="logo">
+          <a href="#" class="logo">
             <img src="images/svg/Logo.svg" alt="Roll-up" />
-          </div>
+          </a>
           <nav class="navbar">
             <ul>
               <li><a href="#catalog">Каталог</a></li>
@@ -34,11 +33,11 @@
         </div>
         <div class="right-header">
           <div class="contact-info">
-            <div class="busket">
+            <a class="busket" href="#" id="popup-link-basket">
               <img src="images/svg/Busket.svg" alt="busket" />
-            </div>
+            </a>
             <div class="contacts">
-              <div class="phone">+7 (800) 555-35-35</div>
+              <a class="phone" href="tel:+78005553535">+7 (800) 555-35-35</a>
               <a href="mailto:yoremail@yandex.ru" class="email"
                 >yoremail@yandex.ru</a
               >
@@ -47,6 +46,7 @@
         </div>
       </div>
     </header>
+
     <div class="banner">
       <div class="container-fluid">
         <div class="banner-container">
@@ -62,7 +62,7 @@
                 только клик-профили, удобные крючки и устойчивые основания
               </div>
               <div class="banner-link">
-                <a href="/"
+                <a href="#catalog"
                   ><span class="banner-button">Перейти в каталог</span>
                   <img src="images/svg/Arrow.svg" alt="Arrow"
                 /></a>
@@ -442,7 +442,7 @@
                 рекламного назначения. 
               </div>
               <div class="banner-link service-link">
-                <a href="/"
+                <a href="#catalog"
                   ><span class="banner-button">Перейти в каталог</span>
                   <img src="images/svg/Arrow.svg" alt="Arrow"
                 /></a>
@@ -504,7 +504,7 @@
                 </ul>
               </div>
               <div class="banner-link service-link">
-                <a href="/"
+                <a href="#catalog"
                   ><span class="banner-button">Перейти в каталог</span>
                   <img src="images/svg/Arrow.svg" alt="Arrow"
                 /></a>
@@ -709,7 +709,76 @@
         </div>
       </div>
     </footer>
+    <div id="overlay"></div>
+    <div id="popup-window-basket">
+      <div class="popup-head">
+        <h1>В корзине</h1>
+        <a class="close-button" id="close-button"
+          ><img src="images/svg/X.svg" alt=""
+        /></a>
+      </div>
+      <div class="popup-products">
+        <div class="popup-product">
+          <div class="img-product">
+            <img src="images/85.png" alt="catalog-item" />
+          </div>
+          <div class="toptext-card popup"><span>85*200 см.</span></div>
+          <div class="title-card-popup popup">
+            Roll-up стенд Стандарт 85*200 см.
+          </div>
 
+          <div class="card-price popup">
+            <div class="price">
+              <span class="price-text">Цена:</span>
+              <span class="price-count">от 2 049.12 руб.</span>
+            </div>
+            <div class="count">
+              <a href="#"><img src="images/svg/Minus.svg" alt="" /></a>
+              <span>1</span>
+              <a href="#"><img src="images/svg/Plus.svg" alt="" /></a>
+            </div>
+          </div>
+          <a class="delete-product">
+            <img src="images/svg/X.svg" alt="" />
+          </a>
+        </div>
+        <div class="popup-product">
+          <div class="img-product">
+            <img src="images/85.png" alt="catalog-item" />
+          </div>
+          <div class="toptext-card popup"><span>85*200 см.</span></div>
+          <div class="title-card-popup popup">
+            Roll-up стенд Стандарт 85*200 см.
+          </div>
+
+          <div class="card-price popup">
+            <div class="price">
+              <span class="price-text">Цена:</span>
+              <span class="price-count">от 2 049.12 руб.</span>
+            </div>
+            <div class="count">
+              <a href="#"><img src="images/svg/Minus.svg" alt="" /></a>
+              <span>1</span>
+              <a href="#"><img src="images/svg/Plus.svg" alt="" /></a>
+            </div>
+          </div>
+          <a class="delete-product">
+            <img src="images/svg/X.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="order-popup">
+        <div class="card-price">
+          <div class="price sum-price">
+            <span class="price-text">Сумма заказа:</span>
+            <span class="price-count">4 098.24 руб.</span>
+          </div>
+          <a class="add-basket banner-link" href="/"
+            ><img src="images/svg/finger.svg" alt="" /> <span>Заказать</span></a
+          >
+        </div>
+      </div>
+    </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -723,5 +792,6 @@
         loop: true,
       });
     </script>
+    <script src="js/index.js"></script>
   </body>
 </html>

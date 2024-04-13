@@ -92,6 +92,12 @@ h6 {
 }
 .busket {
   margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.busket img {
+  width: 50px;
+  height: 50px;
 }
 .left-header {
   display: flex;
@@ -123,8 +129,10 @@ h6 {
   text-decoration: none;
   letter-spacing: -0.05em;
   text-align: left;
+  transition: color 0.3s ease;
 }
-.navbar a:hover {
+.navbar a:hover,
+.phone:hover {
   color: #2f9ea5;
 }
 .contact-info {
@@ -135,6 +143,8 @@ h6 {
 }
 .contacts {
   text-align: right;
+  display: flex;
+  flex-direction: column;
 }
 .navbar ul {
   margin: 0;
@@ -162,6 +172,7 @@ h6 {
   text-align: left;
   color: #2f9ea5;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .phone {
@@ -169,8 +180,10 @@ h6 {
   font-weight: 500;
   line-height: 26.4px;
   letter-spacing: -0.05em;
+  text-decoration: none;
   text-align: left;
   color: #1c252b;
+  transition: color 0.3s ease;
 }
 .email:hover {
   color: rgba(47, 158, 165, 0.7);
@@ -600,6 +613,9 @@ h6 {
   justify-content: space-between;
   margin-top: 50px;
 }
+.contact-item {
+  margin-bottom: 15px;
+}
 .contacts-info {
   display: flex;
   flex-direction: column;
@@ -621,7 +637,7 @@ h6 {
   height: auto;
 }
 .data {
-  font-size: 32px;
+  font-size: 26px;
   line-height: 32px;
   font-weight: 600;
   letter-spacing: -0.05em;
@@ -675,4 +691,87 @@ h6 {
 }
 .footer-address {
   font-size: 16px;
+}
+
+/*------------------------------------------------------------------
+    POPUP
+-------------------------------------------------------------------*/
+
+#popup-window-basket {
+  position: fixed;
+  max-width: 80%;
+  max-height: 80%;
+  background: #fefefe;
+  border-radius: 16px;
+  padding: 30px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3000;
+  display: none;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: none;
+  z-index: 2000;
+}
+
+.popup-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup-head h1 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.05em;
+}
+.close-button {
+  cursor: pointer;
+}
+.img-product img {
+  width: 100px;
+  height: auto;
+}
+.popup {
+  align-self: center;
+}
+.popup-product {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.title-card-popup {
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+.delete-product {
+  cursor: pointer;
+}
+.delete-product img {
+  width: 45px;
+  height: 45px;
+}
+
+.order-popup {
+  display: flex;
+  justify-content: end;
+}
+.sum-price {
+  margin-right: 20px;
 }
