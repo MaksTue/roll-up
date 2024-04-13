@@ -1,5 +1,9 @@
 @import url("css/fonts.css");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #1c252b;
   font-size: 16px;
@@ -58,6 +62,9 @@ h6 {
   color: #a3a7a9;
 }
 
+/* .navbar.active {
+  display: block;
+} */
 /*------------------------------------------------------------------
     HEADER
 -------------------------------------------------------------------*/
@@ -68,11 +75,19 @@ h6 {
   left: 0px;
   top: 0px;
   width: 100%;
-  background-color: #ffffff; /* Цвет фона вашего заголовка */
+  background-color: #ffffff;
   z-index: 1000;
   box-sizing: border-box;
 }
-
+.desktop-header {
+  display: block;
+}
+.mobile-header {
+  display: none;
+}
+.mobile-nav-toggle {
+  display: none;
+}
 .container-fluid {
   display: flex;
   justify-content: space-between;
@@ -82,13 +97,13 @@ h6 {
   display: flex;
   align-items: center;
 }
-.left-header,
+/* .left-header,
 .right-header {
   width: 50%;
   box-sizing: border-box;
-}
+} */
 .right-header {
-  overflow: hidden;
+  margin-left: auto;
 }
 .busket {
   margin-right: 15px;
@@ -208,8 +223,8 @@ h6 {
   display: flex;
   margin-top: 50px;
 }
-.group1,
-.group2 {
+.group1 img,
+.group2 img {
   max-width: 100%;
   height: auto;
 }
@@ -230,7 +245,7 @@ h6 {
 }
 .banner-title {
   font-family: "Inter-Medium", sans-serif;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 500;
   line-height: 70px;
   letter-spacing: -0.05em;
@@ -281,7 +296,9 @@ h6 {
 .sizes-main img {
   width: 100%;
 }
-
+.mobile {
+  display: none;
+}
 /*------------------------------------------------------------------
     CATALOG
 -------------------------------------------------------------------*/
@@ -296,7 +313,9 @@ h6 {
 .catalog-left-card,
 .catalog-right-card {
   display: flex;
-  flex: 1;
+  flex: 1 0 calc(50% - 15px); /* ширина карточки с учетом промежутков между ними */
+  justify-content: center;
+  box-sizing: border-box;
   margin-top: 30px;
 }
 .catalog-left-card {
@@ -632,6 +651,9 @@ h6 {
   color: #2f9ea5;
   margin-bottom: 15px;
 }
+.map {
+  display: flex;
+}
 .map img {
   max-width: 100%;
   height: auto;
@@ -692,6 +714,9 @@ h6 {
 .footer-address {
   font-size: 16px;
 }
+.container-footer.mobile {
+  display: none;
+}
 
 /*------------------------------------------------------------------
     POPUP
@@ -700,7 +725,7 @@ h6 {
 #popup-window-basket {
   position: fixed;
   max-width: 80%;
-  max-height: 80%;
+  height: fit-content;
   background: #fefefe;
   border-radius: 16px;
   padding: 30px;

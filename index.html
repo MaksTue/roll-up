@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Roll-up</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -13,11 +14,12 @@
   </head>
   <body>
     <header class="header">
-      <div class="fluid-header">
+      <div class="fluid-header desktop-header">
         <div class="left-header">
           <a href="#" class="logo">
             <img src="images/svg/Logo.svg" alt="Roll-up" />
           </a>
+
           <nav class="navbar">
             <ul>
               <li><a href="#catalog">Каталог</a></li>
@@ -33,6 +35,9 @@
         </div>
         <div class="right-header">
           <div class="contact-info">
+            <!-- <button class="mobile-nav-toggle">
+              <img src="images/svg/Bar.svg" alt="bar" />
+            </button> -->
             <a class="busket" href="#" id="popup-link-basket">
               <img src="images/svg/Busket.svg" alt="busket" />
             </a>
@@ -42,6 +47,59 @@
                 >yoremail@yandex.ru</a
               >
             </div>
+            <!-- <a class="mobile-nav-toggle" href="tel:+78005553535">
+              <img src="images/svg/Phone.svg" alt="bar" />
+            </a> -->
+          </div>
+        </div>
+      </div>
+      <div class="fluid-header mobile-header">
+        <div class="upper-mobil-header">
+          <div class="left-header">
+            <a href="#" class="logo">
+              <img src="images/svg/Logo.svg" alt="Roll-up" />
+            </a>
+          </div>
+
+          <div class="right-header">
+            <div class="contact-info">
+              <button class="mobile-nav-toggle contact-item-mobile">
+                <img src="images/svg/Bar.svg" alt="bar" />
+              </button>
+              <a
+                class="busket contact-item-mobile"
+                href="#"
+                id="popup-link-basket-mobile"
+              >
+                <img src="images/svg/Busket.svg" alt="busket" />
+              </a>
+              <a
+                class="mobile-nav-toggle contact-item-mobile"
+                href="tel:+78005553535"
+              >
+                <img src="images/svg/Phone.svg" alt="bar" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-list-header">
+          <nav class="navbar">
+            <ul>
+              <li><a href="#catalog">Каталог</a></li>
+              <li><a href="#portfolio">Портфолио</a></li>
+              <li><a href="#services">Roll-up</a></li>
+              <li>
+                <a href="#polypropylene-paper">Полипропиленовая бумага</a>
+              </li>
+              <li><a href="#delivery">Доставка</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <a class="phone" href="tel:+78005553535">+7 (800) 555-35-35</a>
+            <a href="mailto:yoremail@yandex.ru" class="email"
+              >yoremail@yandex.ru</a
+            >
           </div>
         </div>
       </div>
@@ -56,7 +114,10 @@
             </div>
             <div class="text-area-banner">
               <div class="banner-upper-title">Мобильные конструкции</div>
-              <h1 class="banner-title">Мобильные рекламные конструкции</h1>
+              <h1 class="banner-title desctop">
+                Мобильные рекламные конструкции
+              </h1>
+              <h1 class="banner-title mobile">Roll-up стенды</h1>
               <div class="banner-text">
                 Продуманные детали стендов для максимального удобства работы:
                 только клик-профили, удобные крючки и устойчивые основания
@@ -88,8 +149,12 @@
             </div>
           </div>
 
-          <div class="sizes-main">
+          <div class="sizes-main desctop">
             <img src="images/sizes-main.png" alt="sizes-main" />
+          </div>
+
+          <div class="sizes-main mobile">
+            <img src="images/Roll up.png" alt="sizes-main" />
           </div>
         </div>
       </div>
@@ -108,26 +173,36 @@
           <div class="catalog-main">
             <div class="catalog-left-card">
               <div class="img-left-card">
-                <img src="images/85.png" alt="catalog-item" />
+                <img src="images/88.png" alt="catalog-item" />
               </div>
               <div class="inner-left-card">
-                <div class="toptext-card"><span>85*200 см.</span></div>
-                <div class="title-card">Roll-up стенд Стандарт 85*200 см.</div>
+                <div class="toptext-card"><span>150*200 см.</span></div>
+                <div class="title-card">Roll-up стенд Стандарт 150*200 см.</div>
                 <div class="card-price">
                   <div class="price">
                     <span class="price-text">Цена:</span
                     ><span class="price-count">от 2 049.12 руб.</span>
                   </div>
-                  <div class="count">
+                  <div class="count desctop">
                     <a href="/"><img src="images/svg/Minus.svg" alt="" /></a
                     ><span>1</span
                     ><a href="/"><img src="images/svg/Plus.svg" alt="" /></a>
                   </div>
                 </div>
-                <a class="add-basket banner-link" href="/"
+                <a class="add-basket banner-link desctop" href="/"
                   ><img src="images/svg/basket-shopping.svg" alt="" />
                   <span>Добавить в корзину</span></a
                 >
+                <div class="mobile-card-foot mobile">
+                  <div class="count-mobile mobile">
+                    <a href="/"><img src="images/svg/-.svg" alt="" /></a
+                    ><span>1</span
+                    ><a href="/"><img src="images/svg/+.svg" alt="" /></a>
+                  </div>
+                  <a class="add-basket-mobile mobile" href="/">
+                    <span> В корзину</span></a
+                  >
+                </div>
               </div>
             </div>
 
@@ -147,123 +222,26 @@
                     <span class="price-text">Цена:</span
                     ><span class="price-count">2 049.12 руб.</span>
                   </div>
-                  <div class="count">
+                  <div class="count desctop">
                     <a href="/"><img src="images/svg/Minus.svg" alt="" /></a
                     ><span>1</span
                     ><a href="/"><img src="images/svg/Plus.svg" alt="" /></a>
                   </div>
                 </div>
-                <a class="add-basket banner-link" href="/"
+                <a class="add-basket banner-link desctop" href="/"
                   ><img src="images/svg/basket-shopping.svg" alt="" />
                   <span>Добавить в корзину</span></a
                 >
-              </div>
-            </div>
-
-            <div class="catalog-left-card">
-              <div class="img-left-card">
-                <img src="images/86.png" alt="catalog-item" />
-              </div>
-              <div class="inner-left-card">
-                <div class="toptext-card"><span>100*200 см.</span></div>
-                <div class="title-card">Roll-up стенд Стандарт 100*200 см.</div>
-                <div class="card-price">
-                  <div class="price">
-                    <span class="price-text">Цена:</span
-                    ><span class="price-count">от 2 049.12 руб.</span>
-                  </div>
-                  <div class="count">
-                    <a href="/"><img src="images/svg/Minus.svg" alt="" /></a
+                <div class="mobile-card-foot mobile">
+                  <div class="count-mobile mobile">
+                    <a href="/"><img src="images/svg/-.svg" alt="" /></a
                     ><span>1</span
-                    ><a href="/"><img src="images/svg/Plus.svg" alt="" /></a>
+                    ><a href="/"><img src="images/svg/+.svg" alt="" /></a>
                   </div>
+                  <a class="add-basket-mobile mobile" href="/">
+                    <span> В корзину</span></a
+                  >
                 </div>
-                <a class="add-basket banner-link" href="/"
-                  ><img src="images/svg/basket-shopping.svg" alt="" />
-                  <span>Добавить в корзину</span></a
-                >
-              </div>
-            </div>
-
-            <div class="catalog-right-card">
-              <div class="img-right-card">
-                <img src="images/Paper.png" alt="catalog-item" />
-              </div>
-              <div class="inner-left-card">
-                <div class="toptext-card">
-                  <span>1,27*50 м.</span><span>Серый задник.</span>
-                </div>
-                <div class="title-card">
-                  Полипропиленовый материал для печати 1,27*50 м
-                </div>
-                <div class="card-price">
-                  <div class="price">
-                    <span class="price-text">Цена:</span
-                    ><span class="price-count">2 049.12 руб.</span>
-                  </div>
-                  <div class="count">
-                    <a href="/"><img src="images/svg/Minus.svg" alt="" /></a
-                    ><span>1</span
-                    ><a href="/"><img src="images/svg/Plus.svg" alt="" /></a>
-                  </div>
-                </div>
-                <a class="add-basket banner-link" href="/"
-                  ><img src="images/svg/basket-shopping.svg" alt="" />
-                  <span>Добавить в корзину</span></a
-                >
-              </div>
-            </div>
-            <div class="catalog-left-card">
-              <div class="img-left-card">
-                <img src="images/87.png" alt="catalog-item" />
-              </div>
-              <div class="inner-left-card">
-                <div class="toptext-card"><span>120*200 см.</span></div>
-                <div class="title-card">Roll-up стенд Стандарт 120*200 см.</div>
-                <div class="card-price">
-                  <div class="price">
-                    <span class="price-text">Цена:</span
-                    ><span class="price-count">от 2 049.12 руб.</span>
-                  </div>
-                  <div class="count">
-                    <a href="/"><img src="images/svg/Minus.svg" alt="" /></a
-                    ><span>1</span
-                    ><a href="/"><img src="images/svg/Plus.svg" alt="" /></a>
-                  </div>
-                </div>
-                <a class="add-basket banner-link" href="/"
-                  ><img src="images/svg/basket-shopping.svg" alt="" />
-                  <span>Добавить в корзину</span></a
-                >
-              </div>
-            </div>
-
-            <div class="catalog-right-card">
-              <div class="img-right-card">
-                <img src="images/Paper.png" alt="catalog-item" />
-              </div>
-              <div class="inner-left-card">
-                <div class="toptext-card">
-                  <span>1,52*50 м.</span><span>Серый задник.</span>
-                </div>
-                <div class="title-card">
-                  Полипропиленовый материал для печати 1,52*50 м
-                </div>
-                <div class="card-price">
-                  <div class="price">
-                    <span class="price-text">Цена:</span
-                    ><span class="price-count">2 049.12 руб.</span>
-                  </div>
-                  <div class="count">
-                    <a href="/"><img src="images/svg/Minus.svg" alt="" /></a
-                    ><span>1</span
-                    ><a href="/"><img src="images/svg/Plus.svg" alt="" /></a>
-                  </div>
-                </div>
-                <a class="add-basket banner-link" href="/"
-                  ><img src="images/svg/basket-shopping.svg" alt="" />
-                  <span>Добавить в корзину</span></a
-                >
               </div>
             </div>
 
@@ -279,22 +257,182 @@
                     <span class="price-text">Цена:</span
                     ><span class="price-count">от 2 049.12 руб.</span>
                   </div>
-                  <div class="count">
+                  <div class="count desctop">
                     <a href="/"><img src="images/svg/Minus.svg" alt="" /></a
                     ><span>1</span
                     ><a href="/"><img src="images/svg/Plus.svg" alt="" /></a>
                   </div>
                 </div>
-                <a class="add-basket banner-link" href="/"
+                <a class="add-basket banner-link desctop" href="/"
                   ><img src="images/svg/basket-shopping.svg" alt="" />
                   <span>Добавить в корзину</span></a
                 >
+                <div class="mobile-card-foot mobile">
+                  <div class="count-mobile mobile">
+                    <a href="/"><img src="images/svg/-.svg" alt="" /></a
+                    ><span>1</span
+                    ><a href="/"><img src="images/svg/+.svg" alt="" /></a>
+                  </div>
+                  <a class="add-basket-mobile mobile" href="/">
+                    <span> В корзину</span></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-right-card">
+              <div class="img-right-card">
+                <img src="images/Paper.png" alt="catalog-item" />
+              </div>
+              <div class="inner-left-card">
+                <div class="toptext-card">
+                  <span>1,06*50 м.</span><span>Серый задник.</span>
+                </div>
+                <div class="title-card">
+                  Полипропиленовый материал для печати 1,06*50 м
+                </div>
+                <div class="card-price">
+                  <div class="price">
+                    <span class="price-text">Цена:</span
+                    ><span class="price-count">2 049.12 руб.</span>
+                  </div>
+                  <div class="count desctop">
+                    <a href="/"><img src="images/svg/Minus.svg" alt="" /></a
+                    ><span>1</span
+                    ><a href="/"><img src="images/svg/Plus.svg" alt="" /></a>
+                  </div>
+                </div>
+                <a class="add-basket banner-link desctop" href="/"
+                  ><img src="images/svg/basket-shopping.svg" alt="" />
+                  <span>Добавить в корзину</span></a
+                >
+                <div class="mobile-card-foot mobile">
+                  <div class="count-mobile mobile">
+                    <a href="/"><img src="images/svg/-.svg" alt="" /></a
+                    ><span>1</span
+                    ><a href="/"><img src="images/svg/+.svg" alt="" /></a>
+                  </div>
+                  <a class="add-basket-mobile mobile" href="/">
+                    <span> В корзину</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="catalog-left-card">
+              <div class="img-left-card">
+                <img src="images/88.png" alt="catalog-item" />
+              </div>
+              <div class="inner-left-card">
+                <div class="toptext-card"><span>150*200 см.</span></div>
+                <div class="title-card">Roll-up стенд Стандарт 150*200 см.</div>
+                <div class="card-price">
+                  <div class="price">
+                    <span class="price-text">Цена:</span
+                    ><span class="price-count">от 2 049.12 руб.</span>
+                  </div>
+                  <div class="count desctop">
+                    <a href="/"><img src="images/svg/Minus.svg" alt="" /></a
+                    ><span>1</span
+                    ><a href="/"><img src="images/svg/Plus.svg" alt="" /></a>
+                  </div>
+                </div>
+                <a class="add-basket banner-link desctop" href="/"
+                  ><img src="images/svg/basket-shopping.svg" alt="" />
+                  <span>Добавить в корзину</span></a
+                >
+                <div class="mobile-card-foot mobile">
+                  <div class="count-mobile mobile">
+                    <a href="/"><img src="images/svg/-.svg" alt="" /></a
+                    ><span>1</span
+                    ><a href="/"><img src="images/svg/+.svg" alt="" /></a>
+                  </div>
+                  <a class="add-basket-mobile mobile" href="/">
+                    <span> В корзину</span></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-right-card">
+              <div class="img-right-card">
+                <img src="images/Paper.png" alt="catalog-item" />
+              </div>
+              <div class="inner-left-card">
+                <div class="toptext-card">
+                  <span>1,06*50 м.</span><span>Серый задник.</span>
+                </div>
+                <div class="title-card">
+                  Полипропиленовый материал для печати 1,06*50 м
+                </div>
+                <div class="card-price">
+                  <div class="price">
+                    <span class="price-text">Цена:</span
+                    ><span class="price-count">2 049.12 руб.</span>
+                  </div>
+                  <div class="count desctop">
+                    <a href="/"><img src="images/svg/Minus.svg" alt="" /></a
+                    ><span>1</span
+                    ><a href="/"><img src="images/svg/Plus.svg" alt="" /></a>
+                  </div>
+                </div>
+                <a class="add-basket banner-link desctop" href="/"
+                  ><img src="images/svg/basket-shopping.svg" alt="" />
+                  <span>Добавить в корзину</span></a
+                >
+                <div class="mobile-card-foot mobile">
+                  <div class="count-mobile mobile">
+                    <a href="/"><img src="images/svg/-.svg" alt="" /></a
+                    ><span>1</span
+                    ><a href="/"><img src="images/svg/+.svg" alt="" /></a>
+                  </div>
+                  <a class="add-basket-mobile mobile" href="/">
+                    <span> В корзину</span></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-left-card">
+              <div class="img-left-card">
+                <img src="images/88.png" alt="catalog-item" />
+              </div>
+              <div class="inner-left-card">
+                <div class="toptext-card"><span>150*200 см.</span></div>
+                <div class="title-card">Roll-up стенд Стандарт 150*200 см.</div>
+                <div class="card-price">
+                  <div class="price">
+                    <span class="price-text">Цена:</span
+                    ><span class="price-count">от 2 049.12 руб.</span>
+                  </div>
+                  <div class="count desctop">
+                    <a href="/"><img src="images/svg/Minus.svg" alt="" /></a
+                    ><span>1</span
+                    ><a href="/"><img src="images/svg/Plus.svg" alt="" /></a>
+                  </div>
+                </div>
+                <a class="add-basket banner-link desctop" href="/"
+                  ><img src="images/svg/basket-shopping.svg" alt="" />
+                  <span>Добавить в корзину</span></a
+                >
+                <div class="mobile-card-foot mobile">
+                  <div class="count-mobile mobile">
+                    <a href="/"><img src="images/svg/-.svg" alt="" /></a
+                    ><span>1</span
+                    ><a href="/"><img src="images/svg/+.svg" alt="" /></a>
+                  </div>
+                  <a class="add-basket-mobile mobile" href="/">
+                    <span> В корзину</span></a
+                  >
+                </div>
               </div>
             </div>
 
             <div class="catalog-right-card shopping-card">
-              <div class="img-right-card">
+              <div class="img-right-card desctop">
                 <img src="images/Roll-up.png" alt="catalog-item" />
+              </div>
+              <div class="img-right-card mobile">
+                <img src="images/89.png" alt="catalog-item" />
               </div>
               <div class="inner-left-card">
                 <div class="toptext-card shopping-topptext">
@@ -369,7 +507,7 @@
       </div>
     </div>
 
-    <div class="info">
+    <div class="info desctop">
       <div class="container">
         <div class="portfolio-cards">
           <div class="portfolio-card">
@@ -441,6 +579,9 @@
                 обусловивших высокий спрос на данный вид стендов среди компаний
                 рекламного назначения. 
               </div>
+              <div class="service-first-img mobile">
+                <img src="images/svg/Group 2.svg" alt="banner" />
+              </div>
               <div class="banner-link service-link">
                 <a href="#catalog"
                   ><span class="banner-button">Перейти в каталог</span>
@@ -448,7 +589,7 @@
                 /></a>
               </div>
             </div>
-            <div class="service-first-img">
+            <div class="service-first-img desctop">
               <img src="images/Banner First Screen.png" alt="" />
             </div>
           </div>
@@ -503,6 +644,9 @@
                   </li>
                 </ul>
               </div>
+              <div class="service-first-img mobile">
+                <img src="images/svg/paper-and-balls.svg" alt="" />
+              </div>
               <div class="banner-link service-link">
                 <a href="#catalog"
                   ><span class="banner-button">Перейти в каталог</span>
@@ -510,7 +654,7 @@
                 /></a>
               </div>
             </div>
-            <div class="service-first-img">
+            <div class="service-first-img desctop">
               <img src="images/03.png" alt="" />
             </div>
           </div>
@@ -645,6 +789,58 @@
         </div>
       </div>
     </div>
+
+    <div class="info mobile">
+      <div class="container">
+        <div class="portfolio-cards">
+          <div class="portfolio-card">
+            <img
+              calss="card-img-portf"
+              src="images/svg/High-quality stands.svg"
+              alt=""
+            />
+            <div class="card-title-portf">Качественные стенды</div>
+            <div class="card-text-portf container-text">
+              Продуманные детали стендов для максимального удобства работы:
+              только клик-профили, удобные крючки и устойчивые основания
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img
+              calss="card-img-portf"
+              src="images/svg/Comprehensive solutions.svg"
+              alt=""
+            />
+            <div class="card-title-portf">Комплексные решения</div>
+            <div class="card-text-portf container-text">
+              Мы прямой поставщик не только мобильных стендов, но и печатных
+              материалов, используемых в производстве рекламы
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img
+              calss="card-img-portf"
+              src="images/svg/Detailed consultations.svg"
+              alt=""
+            />
+            <div class="card-title-portf">Подробные консультации</div>
+            <div class="card-text-portf container-text">
+              Мы с радостью проконсультируем вас по нашим стендам: поможем
+              подобрать нужную модель, подскажем как ее собирать, порекомендуем
+              лучший печатный материал
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img calss="card-img-portf" src="images/svg/Delivery.svg" alt="" />
+            <div class="card-title-portf">Доставка</div>
+            <div class="card-text-portf container-text">
+              Организуем доставку по всей России. Возможен самовывоз в
+              Санкт-Петербурге
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="contact" id="contacts">
       <div class="container">
         <div class="container-inner">
@@ -682,7 +878,7 @@
       </div>
     </div>
     <footer class="footer">
-      <div class="container-footer">
+      <div class="container-footer desctop">
         <div class="left-footer">
           <div class="description-footer">
             <div class="logo-footer">
@@ -708,6 +904,24 @@
           </div>
         </div>
       </div>
+      <div class="container-footer mobile">
+        <div class="logo-footer">
+          <img src="images/svg/Logo w.svg" alt="" />
+        </div>
+        <div class="text-footer">
+          Продуманные детали стендов для максимального удобства работы: только
+          клик-профили, удобные крючки и устойчивые основания
+        </div>
+        <div class="footer-contact footer-number">+7 (800) 555-35-35</div>
+        <div class="footer-contact footer-number">yoremail@yandex.ru</div>
+        <div class="footer-contact footer-address">
+          196006, г. Санкт-Петербург, Люботинский проспект, 2-4
+        </div>
+        <div class="allrights">
+          Политика конфиденциальности и обработки данных
+        </div>
+        <div class="allrights">© RollUp, 2024. Все права защищены.</div>
+      </div>
     </footer>
     <div id="overlay"></div>
     <div id="popup-window-basket">
@@ -729,13 +943,17 @@
 
           <div class="card-price popup">
             <div class="price">
-              <span class="price-text">Цена:</span>
-              <span class="price-count">от 2 049.12 руб.</span>
+              <span class="price-text popup">Цена:</span>
+              <span class="price-count popup">от 2 049.12 руб.</span>
             </div>
-            <div class="count">
+            <div class="count popup desctop">
               <a href="#"><img src="images/svg/Minus.svg" alt="" /></a>
               <span>1</span>
               <a href="#"><img src="images/svg/Plus.svg" alt="" /></a>
+            </div>
+            <div class="count-mobile popup mobile">
+              <a href="/"><img src="images/svg/-.svg" alt="" /></a><span>1</span
+              ><a href="/"><img src="images/svg/+.svg" alt="" /></a>
             </div>
           </div>
           <a class="delete-product">
@@ -753,13 +971,17 @@
 
           <div class="card-price popup">
             <div class="price">
-              <span class="price-text">Цена:</span>
-              <span class="price-count">от 2 049.12 руб.</span>
+              <span class="price-text popup">Цена:</span>
+              <span class="price-count popup">от 2 049.12 руб.</span>
             </div>
-            <div class="count">
+            <div class="count popup desctop">
               <a href="#"><img src="images/svg/Minus.svg" alt="" /></a>
               <span>1</span>
               <a href="#"><img src="images/svg/Plus.svg" alt="" /></a>
+            </div>
+            <div class="count-mobile popup mobile">
+              <a href="/"><img src="images/svg/-.svg" alt="" /></a><span>1</span
+              ><a href="/"><img src="images/svg/+.svg" alt="" /></a>
             </div>
           </div>
           <a class="delete-product">
