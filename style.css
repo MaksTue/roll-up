@@ -5,7 +5,6 @@ body {
   font-size: 16px;
   font-family: "Inter-Regular", sans-serif;
   line-height: 27px;
-  overflow-x: hidden;
 }
 h1,
 h2,
@@ -184,6 +183,8 @@ h6 {
   display: flex;
   justify-content: center;
   margin-top: 130px;
+  border-radius: 16px;
+  background-color: #2f9ea50d;
 }
 .banner-container {
   display: flex;
@@ -194,7 +195,11 @@ h6 {
   display: flex;
   margin-top: 50px;
 }
-
+.group1,
+.group2 {
+  max-width: 100%;
+  height: auto;
+}
 .text-area-banner {
   display: flex;
   flex-direction: column;
@@ -283,6 +288,8 @@ h6 {
 }
 .catalog-left-card {
   margin-right: 15px;
+  border-radius: 16px;
+  background: #f9f9f9;
 }
 .catalog-right-card {
   background: #f0f1f1;
@@ -412,6 +419,7 @@ h6 {
 -------------------------------------------------------------------*/
 .slider-container {
   padding-top: 50px;
+  max-width: 100%;
 }
 
 .swiper-slide {
@@ -446,10 +454,12 @@ h6 {
   justify-content: space-between;
 }
 .portfolio-card {
-  flex-basis: calc(40% - 10px);
+  flex-basis: calc(50% - 80px);
   margin: 10px;
   text-align: left;
   padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
 }
 
 /*------------------------------------------------------------------
@@ -460,9 +470,31 @@ h6 {
   justify-content: space-between;
   padding-top: 50px;
 }
+.service-first-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: #f9fcfc;
+  border-radius: 16px;
+  z-index: -10;
+}
+.service-first-img img {
+  max-width: 100%;
+  height: auto;
+}
 .service-text {
+  flex: 1;
+
   justify-content: end;
   padding: 0;
+}
+.service-text-list {
+  padding: 30px;
+  background-color: #f9fcfc;
+  border-radius: 16px;
+  max-width: 50%;
+  margin-right: 20px;
 }
 .service-link {
   margin-top: 30px;
@@ -470,9 +502,13 @@ h6 {
 
 .services {
   margin-top: 100px;
+  background-color: #f3f9f9;
+  border-radius: 16px;
+  z-index: 1;
 }
 .servcice-container {
   margin-top: 50px;
+  padding-bottom: 50px;
   width: 100%;
 }
 
@@ -495,7 +531,8 @@ h6 {
 .service-second-inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
 }
 
 .services {
@@ -505,6 +542,10 @@ h6 {
 .ball {
   position: absolute;
   z-index: -1;
+}
+.ball img {
+  max-width: 100%;
+  height: auto;
 }
 .service-container-text {
   max-width: 400px;
@@ -556,7 +597,7 @@ h6 {
 }
 .contact-inner {
   display: flex;
-
+  justify-content: space-between;
   margin-top: 50px;
 }
 .contacts-info {
@@ -564,6 +605,9 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
   padding: 40px;
+  margin-right: 30px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
 }
 .contact-name {
   font-size: 16px;
@@ -571,6 +615,10 @@ h6 {
   letter-spacing: -0.05em;
   color: #2f9ea5;
   margin-bottom: 15px;
+}
+.map img {
+  max-width: 100%;
+  height: auto;
 }
 .data {
   font-size: 32px;
